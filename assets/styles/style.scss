@@ -15,7 +15,6 @@
   padding: 0 20px;
 }
 
-
 .menu-wrapper {
   cursor: pointer;
   list-style: none;
@@ -67,12 +66,9 @@ a:focus:after {
 
 .homepage-slider-hover {
   position: relative;
-}
-
-.homepage-slider {
-  list-style: none;
-  overflow: hidden;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content {
@@ -81,7 +77,7 @@ a:focus:after {
   justify-content: center;
 }
 
-.text-content {
+.slide {
   list-style: none;
   position: absolute;
   display: flex;
@@ -113,9 +109,8 @@ a:focus:after {
   font-weight: 700;
 }
 
-.slider-hover {
+.slider-image {
   filter: brightness(48%);
-
 }
 
 #sl {
@@ -195,7 +190,6 @@ a:focus:after {
 
 .footer-wrapper {
   background: var(--black);
-  height: 319px;
   text-align: left;
   display: flex;
   padding-top: 32px;
