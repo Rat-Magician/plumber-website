@@ -1,9 +1,8 @@
 @import "variables.scss";
-@media (max-width: 1440px) {
-  header {
-    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
-    font-weight: 700;
-  }
+
+ header {
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
+  font-weight: 700;
 }
 
 .menu {
@@ -13,11 +12,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 20px;
 }
 
-.header-logo {
-
-}
 
 .menu-wrapper {
   cursor: pointer;
@@ -74,12 +71,14 @@ a:focus:after {
 
 .homepage-slider {
   list-style: none;
-  max-width: 1438px;
+  overflow: hidden;
   display: flex;
 }
 
 .content {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .text-content {
@@ -90,7 +89,6 @@ a:focus:after {
   flex-flow: column;
   color: var(--white);
   width: 940px;
-  padding: 0 253px 0 253px;
   z-index: 9;
 }
 
@@ -117,6 +115,7 @@ a:focus:after {
 
 .slider-hover {
   filter: brightness(48%);
+
 }
 
 #sl {
@@ -156,7 +155,7 @@ a:focus:after {
 }
 
 .blog-wrapper {
-  width: 80%;
+  width: 100%;
   text-align: left;
 }
 
@@ -190,6 +189,8 @@ a:focus:after {
 .footer-news {
   margin: auto;
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .footer-wrapper {
@@ -198,6 +199,7 @@ a:focus:after {
   text-align: left;
   display: flex;
   padding-top: 32px;
+  justify-content: center;
 }
 
 .dark-logo {
@@ -208,7 +210,6 @@ a:focus:after {
 .social-info {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
 }
 
 .footer-content-wrapper {
@@ -226,7 +227,6 @@ a:focus:after {
 .links-container {
   display: flex;
   align-items: baseline;
-  padding-left: 94px;
 }
 
 .links-footer {
@@ -308,10 +308,14 @@ a:focus:after {
   line-height: 12px;
   color: var(--red);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 11px 0 12px 0;
 }
 
 .terms {
   padding-right: 38px;
+}
+
+.container {
+  width: 1170px;
 }
