@@ -43,6 +43,305 @@
   padding: 0 18px;
 }
 
+a {
+	position: relative;
+	cursor: pointer;
+}
+
+a:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: var(--red); 
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%; 
+}
+
+/* Call for plumbing needs block */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.receive-help-wrapper {
+  display: flex;
+  padding-top: 48px;
+  justify-content: center;
+}
+
+.contact-info {
+  font-size: 44px;
+  line-height: 52px;
+  text-transform: uppercase;
+  text-align: left;
+  align-self: center;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-header {
+  font-weight: 900;
+  font-size: 44px;
+}
+
+.needs-text {
+  font-weight: 600;
+}
+
+.contact-number {
+font-size: 34px;
+line-height: 40px;
+font-weight: 900;
+padding-top: 17px;
+}
+
+.services-button {
+  width: 160px;
+  height: 44px;
+  border-radius: 35px;
+  background: var(--red);
+  border: 1px solid var(--red);
+}
+
+.service-button-text {
+  font-size: 15px;
+  color: var(--white);
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.plumber-image-item {
+  padding-left: 64px;
+  margin-bottom: -4px;
+}
+
+/* Services block*/
+
+.maintenance-block-wrapper {
+  background: var(--red);
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+}
+
+.maintenance-block {
+  max-width: 237px;
+  padding: 63px 46px 34px 46px;
+  text-align: center;
+}
+
+.maintenance-headline {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 12px;
+}
+
+.maintenance-text-block {
+  color: var(--white);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.maintenance-button {
+  max-width: 115px;
+  height: 32px;
+  background: var(--white);
+  border-radius: 5px;
+  border: var(--white) solid 1px;
+  margin-top: 8px;
+}
+
+.learn-more {
+  font-size: 17px;
+  line-height: 19px;
+  text-decoration: underline;
+}
+
+.border-maintenance-block {
+  border: 1px solid var(--white-1);
+  margin: 42px 0 31px 0;
+}
+
+/* Welcome to Plumber company block*/
+
+.welcome-header {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 52px;
+  max-width: 400px;
+  margin: 0;
+}
+
+.welcome-text {
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  padding: 12px 0 31px 0;
+}
+
+.welcome-intro {
+  background: url(../photo-content/video.png);
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: cover;
+  justify-content: space-between;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 79px 0 79px 0;
+}
+
+.welcome-intro-wrapper {
+  background: rgba(255, 255, 255, 0.7);
+  max-width: 542px;
+  z-index: 10;
+  text-align: left;
+  width: 50%;
+  padding: 40px;
+}
+
+.learn-button {
+  width: 136px;
+  height: 43px;
+  background: var(--red);
+  border-radius: 45px;
+  border: 1px solid var(--red);
+  color: var(--white);
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.video-icon {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+}
+
+/* Our Company history*/
+
+.red-background {
+  background: var(--red);
+  max-width: 1768px;
+}
+
+.experts-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.couple-img-block {
+  display: flex;
+  align-items: center;
+}
+
+.text-block-experts {
+  max-width: 432px;
+  text-align: left;
+  padding: 50px 0 50px 0;
+  margin-left: -98px;
+}
+
+.history-header {
+  font-size: 41px;
+  line-height: 52px;
+  color: var(--white);
+  margin: 0;
+}
+
+.trust-header {
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--white);
+  margin: 0;
+}
+
+.company-info {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 35px;
+}
+
+.company-info-padding { 
+  padding-bottom: 0;
+}
+
+/* Plumber Points block*/
+
+.advantages {
+  padding-top: 87px;
+}
+
+.advantages-text-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.advantages-info {
+  padding-top: 8px;
+  color: var(--gray);
+  line-height: 22px;
+  font-size: 16px;
+  max-width: 983px;
+}
+
+.advantages-wrapper {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  padding-top: 49px;
+}
+
+.advantages-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1160px;
+}
+
+.advantages-list {
+  flex-direction: column;
+  display: flex;
+}
+
+.advantages-ellipse-item {
+  width: 8px;
+  height: 8px;
+  border: 3px solid #DD3142;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+}
+
+.list-item {
+  display: flex;
+}
+
+.block-spacing {
+  padding-top: 29px;
+  padding-bottom: 66px;
+}
+
+.column-advantages {
+  padding-left: 10px;
+}
+
+/* Our dedicated team block*/
 
 .team-info-wrapper {
   padding: 63px 0 69px 0;
@@ -85,7 +384,8 @@
   justify-content: center;
   flex-flow: column;
   position: absolute;
-  bottom: -39px;
+  bottom: -39px;    
+  align-items: center;
 }
 
 .staff-name {
@@ -105,26 +405,7 @@
   justify-content: center;
 }
 
-a {
-	position: relative;
-	cursor: pointer;
-}
-
-a:after {
-	display: block;
-	position: absolute;
-	left: 0; 
-	width: 0;
-	height: 2px; 
-	background-color:var(--red); 
-	content: "";
-	transition: width 0.3s ease-out;
-}
-
-a:hover:after,
-a:focus:after {
-	width: 100%; 
-}
+/* Slider block*/
 
 .homepage-slider-hover {
   padding-top: 32px;
@@ -185,6 +466,8 @@ a:focus:after {
 .nav-dots {
   left: 23px;
   padding-top: 24px;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-dots span {
@@ -210,8 +493,9 @@ a:focus:after {
   background: var(--red);
 }
 
+/* Our Recent Blogs block*/
+
 .blog-wrapper {
-  width: 100%;
   text-align: left;
   padding: 52px 0 52px 0;
 }
@@ -241,13 +525,14 @@ a:focus:after {
 }
 
 .blog-info {
-  width: 329px;
+  max-width: 329px;
 }
+
+/* News block */
 
 .footer-news {
   margin: auto;
   display: flex;
-  width: 100%;
   justify-content: space-between;
 }
 
@@ -263,6 +548,8 @@ a:focus:after {
   width: 165px;
   padding-bottom: 28px;
 }
+
+/* Logo and info block*/
 
 .social-info {
   display: flex;
@@ -280,6 +567,8 @@ a:focus:after {
 .social-link {
   padding-right: 20px;
 }
+
+/*Services, contact and posts block*/
 
 .links-container {
   display: flex;
@@ -355,9 +644,13 @@ a:focus:after {
   height: 50px;
 }
 
+/* Copyright block*/
+
 .string {
   border-top: 1px solid #FFFFFF;
   background: var(--black);
+  display: flex;
+  justify-content: center;
 }
 
 .copyright {
@@ -375,62 +668,59 @@ a:focus:after {
 
 .container {
   max-width: 1170px;
+  width: 100%;
 }
 
-.advantages {
-  width: 1440px;
-}
-
-.advantages-text-block {
+.receive-help-wrapper {
   display: flex;
-  align-items: center;
+  padding-top: 48px;
+  justify-content: center;
+}
+
+.contact-info {
+  font-size: 44px;
+  line-height: 52px;
+  text-transform: uppercase;
+  text-align: left;
+  align-self: center;
+}
+
+.contact-us {
+  display: flex;
   flex-direction: column;
 }
 
-.advantages-info {
-  padding-top: 8px;
-  color: var(--gray);
-  line-height: 22px;
-  font-size: 16px;
-  max-width: 983px;
+.contact-header {
+  font-weight: 900;
+  font-size: 44px;
 }
 
-.advantages-wrapper {
-  font-size: 14px;
-  line-height: 17px;
+.contact-number {
+font-size: 34px;
+line-height: 40px;
+font-weight: 900;
+padding-top: 17px;
+}
+
+.needs-text {
   font-weight: 600;
-  padding-top: 49px;
 }
 
-.advantages-container {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1160px;
+.services-button {
+  width: 160px;
+  height: 44px;
+  border-radius: 35px;
+  background: var(--red);
+  border: 1px solid var(--red);
 }
 
-.advantages-list {
-  flex-direction: column;
-  display: flex;
+.service-button-text {
+  font-size: 15px;
+  color: var(--white);
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
-.ellipse {
-  width: 8px;
-  height: 8px;
-  border: 3px solid #DD3142;
-  background: var(--white);
-  border-radius: 50%;
-  display: flex;
-}
-
-.list-item {
-  display: flex;
-}
-
-.block-spacing {
-  padding-top: 29px;
-  padding-bottom: 66px;
-}
-
-.column-advantages {
-  padding-left: 10px;
+.plumber-image-item {
+  padding-left: 64px;
 }
