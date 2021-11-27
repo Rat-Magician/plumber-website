@@ -1,7 +1,7 @@
 @import "variables.scss";
 
  header {
-  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
   font-weight: 700;
 }
 
@@ -38,7 +38,7 @@
   font-size: 11px;
   font-weight: 700;
   white-space: nowrap;
-  margin: 0 0 0 40px;
+  margin-left: 40px;
   cursor: pointer;
   padding: 0 18px;
 }
@@ -130,10 +130,7 @@ padding-top: 17px;
 /* Services block*/
 
 .maintenance-wrapper {
-  width: 100%
-}
-
-.maintenance-block-wrapper {
+  width: 100%;
   background: var(--red);
   display: flex;
   justify-content: center;
@@ -196,14 +193,14 @@ padding-top: 17px;
 }
 
 .welcome-intro {
-  background: url(../photo-content/video.png);
+  background: url(../photo-content/video.jpg);
   background-repeat: no-repeat;
   display: flex;
   background-size: cover;
   justify-content: space-between;
   padding: 50px;
   box-sizing: border-box;
-  margin: 79px 0 79px 0;
+  margin: 79px 0;
 }
 
 .welcome-intro-wrapper {
@@ -237,7 +234,7 @@ padding-top: 17px;
 
 /* Our Company history*/
 
-.red-background {
+.our-company_block {
   background: var(--red);
   width: 100%;
 }
@@ -315,6 +312,7 @@ padding-top: 17px;
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding-bottom: 66px ;
 }
 
 .advantages-list {
@@ -332,12 +330,12 @@ padding-top: 17px;
 }
 
 .list-item {
+  padding-top: 29px;
   display: flex;
 }
 
-.block-spacing {
-  padding-top: 29px;
-  padding-bottom: 66px;
+.advantages-list .list-item:first-child {
+  padding-top: 0;
 }
 
 .column-advantages {
@@ -521,6 +519,10 @@ footer {
   padding-bottom: 22px;
 }
 
+.blog {
+  max-width: 329px;
+}
+
 .blog-panel {
   display: flex;
   justify-content: space-between;
@@ -535,10 +537,6 @@ footer {
 .description {
   font-size: 16px;
   line-height: 17px;
-}
-
-.blog-info {
-  max-width: 329px;
 }
 
 /* News block */
@@ -711,10 +709,10 @@ footer {
 }
 
 .contact-number {
-font-size: 34px;
-line-height: 40px;
-font-weight: 900;
-padding-top: 17px;
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 900;
+  padding-top: 17px;
 }
 
 .needs-text {
@@ -727,9 +725,6 @@ padding-top: 17px;
   border-radius: 35px;
   background: var(--red);
   border: 1px solid var(--red);
-}
-
-.service-button-text {
   font-size: 15px;
   color: var(--white);
   line-height: 18px;
