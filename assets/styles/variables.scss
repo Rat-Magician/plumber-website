@@ -2,10 +2,20 @@
   --white: #fff;
   --black: #000;
   --red: #DD3142;
+  --gray: #6D6D6D;
+  --white-1: #E6E6EB;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }

@@ -1,9 +1,8 @@
 @import "variables.scss";
-@media (max-width: 1440px) {
-  header {
-    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
-    font-weight: 700;
-  }
+
+ header {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+  font-weight: 700;
 }
 
 .menu {
@@ -13,11 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.header-logo {
-  display: inline-block;
-  padding: 8px 10px 0 135px;
+  padding: 0 20px;
 }
 
 .menu-wrapper {
@@ -33,7 +28,6 @@
 
 .call-button {
   font-family: "Roboto", sans-serif;
-  width: 146px;
   height: 36px;
   background-color: var(--red);
   border-radius: 5px;
@@ -44,8 +38,9 @@
   font-size: 11px;
   font-weight: 700;
   white-space: nowrap;
-  margin: 0 135px 0 40px;
+  margin-left: 40px;
   cursor: pointer;
+  padding: 0 18px;
 }
 
 a {
@@ -59,7 +54,7 @@ a:after {
 	left: 0; 
 	width: 0;
 	height: 2px; 
-	background-color:var(--red); 
+	background-color: var(--red); 
 	content: "";
 	transition: width 0.3s ease-out;
 }
@@ -69,31 +64,384 @@ a:focus:after {
 	width: 100%; 
 }
 
-.homepage-slider-hover {
+/* Call for plumbing needs block */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.receive-help-wrapper {
+  display: flex;
+  padding-top: 48px;
+  justify-content: center;
+}
+
+.contact-info {
+  font-size: 44px;
+  line-height: 52px;
+  text-transform: uppercase;
+  text-align: left;
+  align-self: center;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-header {
+  font-weight: 900;
+  font-size: 44px;
+}
+
+.needs-text {
+  font-weight: 600;
+}
+
+.contact-number {
+font-size: 34px;
+line-height: 40px;
+font-weight: 900;
+padding-top: 17px;
+}
+
+.services-button {
+  width: 160px;
+  height: 44px;
+  border-radius: 35px;
+  background: var(--red);
+  border: 1px solid var(--red);
+}
+
+.service-button-text {
+  font-size: 15px;
+  color: var(--white);
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.plumber-image-item {
+  padding-left: 64px;
+  margin-bottom: -4px;
+}
+
+/* Services block*/
+
+.maintenance-wrapper {
+  width: 100%;
+  background: var(--red);
+  display: flex;
+  justify-content: center;
+}
+
+.maintenance-block {
+  max-width: 237px;
+  padding: 63px 46px 34px 46px;
+  text-align: center;
+}
+
+.maintenance-headline {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 12px;
+}
+
+.maintenance-text-block {
+  color: var(--white);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.maintenance-button {
+  max-width: 115px;
+  height: 32px;
+  background: var(--white);
+  border-radius: 5px;
+  border: var(--white) solid 1px;
+  margin-top: 8px;
+}
+
+.learn-more {
+  font-size: 17px;
+  line-height: 19px;
+  text-decoration: underline;
+}
+
+.border-maintenance-block {
+  border: 1px solid var(--white-1);
+  margin: 42px 0 31px 0;
+}
+
+/* Welcome to Plumber company block*/
+
+.welcome-header {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 52px;
+  max-width: 400px;
+  margin: 0;
+}
+
+.welcome-text {
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  padding: 12px 0 31px 0;
+}
+
+.welcome-intro {
+  background: url(../photo-content/video.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: cover;
+  justify-content: space-between;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 79px 0;
+}
+
+.welcome-intro-wrapper {
+  background: rgba(255, 255, 255, 0.7);
+  max-width: 542px;
+  z-index: 10;
+  text-align: left;
+  width: 50%;
+  padding: 40px;
+}
+
+.learn-button {
+  width: 136px;
+  height: 43px;
+  background: var(--red);
+  border-radius: 45px;
+  border: 1px solid var(--red);
+  color: var(--white);
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.video-icon {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+}
+
+/* Our Company history*/
+
+.our-company_block {
+  background: var(--red);
+  width: 100%;
+}
+
+.experts-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.couple-img-block {
+  display: flex;
+  align-items: center;
+}
+
+.text-block-experts {
+  max-width: 432px;
+  text-align: left;
+  padding: 50px 0 50px 0;
+  margin-left: -98px;
+}
+
+.history-header {
+  font-size: 41px;
+  line-height: 52px;
+  color: var(--white);
+  margin: 0;
+}
+
+.trust-header {
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--white);
+  margin: 0;
+}
+
+.company-info {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 35px;
+}
+
+.company-info-padding { 
+  padding-bottom: 0;
+}
+
+/* Plumber Points block*/
+
+.advantages {
+  padding-top: 87px;
+}
+
+.advantages-text-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.advantages-info {
+  padding-top: 8px;
+  color: var(--gray);
+  line-height: 22px;
+  font-size: 16px;
+  max-width: 983px;
+}
+
+.advantages-wrapper {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  padding-top: 49px;
+}
+
+.advantages-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 66px ;
+}
+
+.advantages-list {
+  flex-direction: column;
+  display: flex;
+}
+
+.advantages-ellipse-item {
+  width: 8px;
+  height: 8px;
+  border: 3px solid #DD3142;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+}
+
+.list-item {
+  padding-top: 29px;
+  display: flex;
+}
+
+.advantages-list .list-item:first-child {
+  padding-top: 0;
+}
+
+.column-advantages {
+  padding-left: 10px;
+}
+
+/* Our dedicated team block*/
+
+.team-info-wrapper {
+  padding: 63px 0 69px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.team-info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 51px;
+}
+
+.header {
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 600;
+}
+
+.team-description {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--gray);
+}
+
+.staff-container {
+  display: flex;
+  justify-content: center;
+}
+
+.staff-briefing {
+  width: 210px;
+  height: 78px;
+  background: var(--red);
+  border-radius: 5px;
+  color: var(--white);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  position: absolute;
+  bottom: -39px;    
+  align-items: center;
+}
+
+.staff-name {
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 13px;
+}
+
+.job-position {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.staff-wrapper {
+  display: flex;
   position: relative;
+  justify-content: center;
+}
+
+/* Slider block*/
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homepage-slider-hover {
+  padding-top: 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .homepage-slider {
-  list-style: none;
-  max-width: 1438px;
-  margin: 100px auto;
-  overflow: hidden;
+  position: absolute;
 }
 
 .content {
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.text-content {
+.slide {
   list-style: none;
-  position: absolute;
   display: flex;
   text-align: center;
   flex-flow: column;
   color: var(--white);
   width: 940px;
-  padding: 0 253px 0 253px;
-  z-index: 9;
 }
 
 .slide-heading {
@@ -117,8 +465,9 @@ a:focus:after {
   font-weight: 700;
 }
 
-.slider-hover {
+.slider-image {
   filter: brightness(48%);
+  border-radius: 10px;
 }
 
 #sl {
@@ -126,13 +475,10 @@ a:focus:after {
 }
 
 .nav-dots {
-  text-align: center;
-  position: absolute;
-  bottom: 2%;
-  height: 30px;
-  width: 100%;
   left: 23px;
-  z-index: 10;
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-dots span {
@@ -147,7 +493,7 @@ a:focus:after {
   cursor: pointer;
 }
 
-.nav-dots span.nav-current-dot:after {
+.nav-dots span.nav-dot_active:after {
   content: "";
   position: absolute;
   width: 6px;
@@ -158,15 +504,28 @@ a:focus:after {
   background: var(--red);
 }
 
+/* Our Recent Blogs block*/
+
+.blog-wrapper {
+  text-align: left;
+  padding: 52px 0 52px 0;
+}
+
 .blog-name {
+  text-align-last: left;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  padding-bottom: 22px;
+}
+
+.blog {
+  max-width: 329px;
 }
 
 .blog-panel {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .caption {
@@ -180,6 +539,198 @@ a:focus:after {
   line-height: 17px;
 }
 
-.blog-info {
-  width: 329px;
+/* News block */
+
+.footer-news {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrapper {
+  background: var(--black);
+  text-align: left;
+  display: flex;
+  padding-top: 32px;
+  justify-content: center;
+  width: 100%;
+}
+
+.dark-logo {
+  width: 165px;
+  padding-bottom: 28px;
+}
+
+/* Logo and info block*/
+
+.social-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content-wrapper {
+  color: var(--white);
+  line-height: 14px;
+  width: 362px;
+  font-size: 12px;
+  padding-bottom: 7px;
+}
+
+.social-link {
+  padding-right: 20px;
+}
+
+/*Services, contact and posts block*/
+
+.links-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.links-footer {
+  color: var(--white);
+  font-size: 12px;
+  line-height: 14px;
+  list-style: none;
+}
+
+.service-link-header {
+  color: var(--red);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  padding-bottom: 40px;
+}
+
+.service-item {
+  padding-bottom: 15px;
+}
+
+.contacts-footer {
+  list-style: none;
+  color: var(--white);
+  font-size: 12px;
+  padding-left: 91px;
+}
+
+.uppercase-info {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.adress {
+  padding-bottom: 39px;
+}
+
+.repair-footer {
+  list-style: none;
+  padding-left: 55px;
+}
+
+.repair-text {
+  width: 179px;
+}
+
+.uppercase-repair {
+  color: var(--white);
+  font-size: 10px;
+  padding-bottom: 5px;
+}
+
+.repair-wrapper {
+  color: var(--white);
+  font-size: 8px;
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.photo-blog {
+  display: flex;
+}
+
+.recent-news {
+  padding-left: 14px;
+}
+
+.recent-blogs_img {
+  height: 50px;
+}
+
+/* Copyright block*/
+
+.navigation-bottom {
+  border-top: 1px solid #FFFFFF;
+  background: var(--black);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.copyright {
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--red);
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 0 12px 0;
+}
+
+.terms {
+  padding-right: 38px;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+}
+
+.receive-help-wrapper {
+  display: flex;
+  padding-top: 48px;
+  justify-content: center;
+}
+
+.contact-info {
+  font-size: 44px;
+  line-height: 52px;
+  text-transform: uppercase;
+  text-align: left;
+  align-self: center;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-header {
+  font-weight: 900;
+  font-size: 44px;
+}
+
+.contact-number {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 900;
+  padding-top: 17px;
+}
+
+.needs-text {
+  font-weight: 600;
+}
+
+.services-button {
+  width: 160px;
+  height: 44px;
+  border-radius: 35px;
+  background: var(--red);
+  border: 1px solid var(--red);
+  font-size: 15px;
+  color: var(--white);
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.plumber-image-item {
+  padding-left: 64px;
 }

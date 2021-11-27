@@ -2,96 +2,483 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/style.scss">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="./assets/fonts/Roboto-Regular.woff">
-    <title>Plumber Point</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/style.scss">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="./assets/fonts/Roboto-Regular.woff">
+  <title>Plumber Point</title>
 </head>
 
 <body>
-    <layout>
-        <header>
-            <nav class="menu">
-                <div class="header-logo"><img src="/assets/icons/plumbcomp-img.svg"></div>
-                <ul class="menu-wrapper">
-                    <li class="menu-item"><a>Home</a></li>
-                    <li class="menu-item"><a>About us</a></li>
-                    <li class="menu-item"><a>Services</a></li>
-                    <li class="menu-item"><a>Project</a></li>
-                    <li class="menu-item"><a>Blogs</a></li>
-                    <li class="menu-item"><a>Contact</a></li>
-                    <button class="call-button">Request A Call Back</button>
-                </ul>
-            </nav>
-        </header>
 
-        <footer>
-            <nav class="homepage-slider-hover">
-                <ul class="homepage-slider">
-                    <li class="content">
-                        <div class="text-content">
-                            <h1 class="slide-heading">Testimonial</h1>
-                            <p class="slide-content">
-                                Lorem Ipsum is simply dummy text
-                                of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard
-                                dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make
-                                a type specimen book.
-                            </p>
-                            <span class="autor">Johny Vino</span>
-                        </div>
-                        <img class="slider-hover" src="assets/photo-content/office.svg">
-                    </li>
+  <header>
+    <div class="menu">
+      <div class="header-logo"><img src="/assets/icons/plumbcomp-img.svg" alt="company-logo_header"></div>
+      <ul class="menu-wrapper">
+        <li class="menu-item"><a>Home</a></li>
+        <li class="menu-item"><a>About us</a></li>
+        <li class="menu-item"><a>Services</a></li>
+        <li class="menu-item"><a>Project</a></li>
+        <li class="menu-item"><a>Blogs</a></li>
+        <li class="menu-item"><a>Contact</a></li>
+        <button class="call-button">Request A Call Back</button>
+      </ul>
+    </div>
+  </header>
 
-                    <nav id="dots" class="nav-dots">
-                        <span class></span>
-                        <span class></span>
-                        <span class="nav-current-dot"></span>
-                        <span class></span>
-                    </nav>
-                </ul>
-            </nav>
+  <main>
+    <section class="receive-help-wrapper container">
+      <div class="contact-info">
+        <div class="contact-us">
+          <span class="contact-header">Call us for any</span>
+          <span class="needs-text">Plumbing Needs</span>
+          <span class="contact-number">+1800-9938-2839 </span>
+        </div>
+        <button class="services-button">
+          <span>See All Service</span>
+        </button>
+      </div>
 
-            <h1 class="blog-name">Our recent blogs</h1>
-            <div class="blog-panel">
+      <div class="plumber-image-item">
+        <img src="assets/photo-content/plumber-duo.png" alt="Kumar_main-page">
+      </div>
+    </section>
 
-                <div class="blog blog1">
-                    <img src="assets/photo-content/repair.svg">
-                    <h2 class="caption blog-info">Lorem Ipsum is simply dummy text of the printing and typesetting.</h2>
-                    <p class="description blog-info">
-                        Lore Issue is simply dummy text
-                        of the printing and typesetting industry.
-                        Lore Issue has...
-                    </p>
-                </div>
+    <section class="maintenance-wrapper">
+      <div class="maintenance-block">
+        <img src="assets/icons/pipe-icon.svg" alt="pipe-icon">
+        <h2 class="maintenance maintenance-headline">Residental Service</h2>
 
-                <div class="blog blog2">
-                    <img src="assets/photo-content/torso.svg">
-                    <h2 class="caption blog-info">Lorem Ipsum is simply dummy text of the printing and typesetting.</h2>
-                    <p class="description blog-info">
-                        Lore Issue is simply dummy text
-                        of the printing and typesetting industry.
-                        Lore Issue has...
-                    </p>
-                </div>
+        <span class="maintenance-text-block">
+          Lorem Ipsum is simply dummy text of
+          the printing and typesetting industry.
+          Lorem Ipsum has been the industry.
+        </span>
 
-                <div class="blog blog3">
-                    <img src="assets/photo-content/plumberman.png">
-                    <h2 class="caption blog-info">Lorem Ipsum is simply dummy text of the printing and typesetting.</h2>
-                    <p class="description blog-info">
-                        Lore Issue is simply dummy text
-                        of the printing and typesetting industry.
-                        Lore Issue has...
-                    </p>
-                </div>
+        <button class="maintenance-button">
+          <span class="learn-more">Learn More</span>
+        </button>
+      </div>
+
+      <div class="border-maintenance-block"></div>
+
+      <div class="maintenance-block">
+        <img src="assets/icons/gear-icon.svg" alt="gear-icon">
+        <h2 class="maintenance maintenance-headline">Commercial Service</h2>
+
+        <span class="maintenance-text-block">
+          Lorem Ipsum is simply dummy text of
+          the printing and typesetting industry.
+          Lorem Ipsum has been the industry.
+        </span>
+
+        <button class="maintenance-button">
+          <span class="learn-more">Learn More</span>
+        </button>
+      </div>
+
+      <div class="border-maintenance-block"></div>
+
+      <div class="maintenance-block">
+        <img src="assets/icons/hand-gear-icon.svg" alt="maintenance-gear">
+        <h2 class="maintenance-headline">Maintenance Service</h2>
+
+        <span class="maintenance-text-block">
+          Lorem Ipsum is simply dummy text of
+          the printing and typesetting industry.
+          Lorem Ipsum has been the industry.
+        </span>
+
+        <button class="maintenance-button">
+          <span class="learn-more">Learn More</span>
+        </button>
+      </div>
+    </section>>
+
+    <section class="welcome-intro container">
+      <div class="welcome-intro-wrapper">
+        <div>
+          <h1 class="welcome-header">Welcome to Plumber Company</h1>
+          <p class="welcome-text">
+            Lorem Ipsum is simply dummy text of
+            the printing and typesetting industry.
+            Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book
+          </p>
+
+          <button class="learn-button">
+            <span>Learn More</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="video-icon">
+        <img src="assets/icons/video-icon.svg" alt="video-content">
+      </div>
+    </section>
+
+    <section class="our-company_block">
+      <div class="experts-wrapper">
+        <div class="couple-img-block">
+          <img src="assets/photo-content/couple.jpg" alt="couple-brofist">
+        </div>
+
+        <div class="text-block-experts">
+          <h1 class="history-header">Our Company History</h1>
+          <p class="company-info">
+            Lorem Ipsum is simply dummy
+            text of the printing and typesetting
+            industry. Lorem Ipsum has been the
+            industry's standard dummy text ever
+            since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to
+            make a type specimen book
+          </p>
+
+          <h1 class="trust-header">Trust Our Team of Experts</h1>
+          <p class="company-info company-info-padding">
+            Lorem Ipsum is simply dummy
+            text of the printing and typesetting
+            industry. Lorem Ipsum has been the
+            industry's standard dummy text ever
+            since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to
+            make a type specimen book
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages-text-block">
+        <span class="header">Plumber Points</span>
+        <span class="advantages-info">
+          Lorem Ipsum is simply
+          dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type
+          and scrambled it to make a type specimen book.
+        </span>
+      </div>
+
+      <div class="advantages-wrapper">
+        <div class="advantages-container">
+          <div class="advantages-list">
+            <div class="list-item">
+              <div class="advantages-ellipse-item"></div>
+              <div class="column-advantages">Residental Service</div>
             </div>
 
-        </footer>
-    </layout>
+            <div class="list-item">
+              <div class="advantages-ellipse-item"></div>
+              <div class="column-advantages">Commercial Service</div>
+            </div>
+          </div>
+
+          <div class="advantages-list">
+            <div class="list-item">
+              <div class="advantages-ellipse-item"></div>
+              <div class="column-advantages">Residental Service</div>
+            </div>
+
+            <div class="list-item">
+              <div class="advantages-ellipse-item"></div>
+              <div class="column-advantages">Commercial Service</div>
+            </div>
+          </div>
+
+          <div class="advantages-list">
+            <div class="list-item">
+              <div class="advantages-ellipse-item"></div>
+              <div class="column-advantages">Residental Service</div>
+            </div>
+
+            <div class="list-item">
+              <div class="advantages-ellipse-item"></div>
+              <div class="column-advantages">Commercial Service</div>
+            </div>
+          </div>
+
+          <div class="advantages-list">
+            <div class="list-item">
+              <div class="advantages-ellipse-item"></div>
+              <div class="column-advantages">Residental Service</div>
+            </div>
+
+            <div class="list-item">
+              <div class="advantages-ellipse-item"></div>
+              <div class="column-advantages">Commercial Service</div>
+            </div>
+          </div>
+        </div>
+        <img src="assets/photo-content/bottoms-up.png" alt="like">
+      </div>
+    </section>
+
+    <section class="team-info-wrapper container">
+      <div class="team-info">
+        <span class="team-title header">Our Dedicated Team</span>
+        <span class="team-description">
+          Lorem Ipsum is simply
+          dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy
+          text ever since the 1500s, when an unknown printer
+          took a galley of type and scrambled it to make a type
+          specimen book.
+        </span>
+      </div>
+
+      <div class="staff-container">
+        <div class="staff-wrapper">
+          <img class="staff-photo" src="assets/photo-content/worker-1.png" alt="Kumar-plumber"> 
+          <div class="staff-briefing">
+            <span class="staff-name">Vinay Kumar</span>
+            <span class="job-position">Plumber</span>
+          </div>
+        </div>
+
+        <div class="staff">
+          <div class="staff-wrapper">
+            <img class="staff-photo" src="assets/photo-content/worker-1.png" alt="Kumar-plumber">
+            <div class="staff-briefing">
+              <span class="staff-name">Vinay Kumar</span>
+              <span class="job-position">Plumber</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="staff">
+          <div class="staff-wrapper">
+            <img class="staff-photo" src="assets/photo-content/worker-1.png" alt="Kumar-plumber">
+            <div class="staff-briefing">
+              <span class="staff-name">Vinay Kumar</span>
+              <span class="job-position">Plumber</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="staff">
+          <div class="staff-wrapper">
+            <img class="staff-photo" src="assets/photo-content/worker-1.png" alt="Kumar-plumber">
+            <div class="staff-briefing">
+              <span class="staff-name">Vinay Kumar</span>
+              <span class="job-position">Plumber</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="homepage-slider-hover">
+      <img class="slider-image" src="assets/photo-content/office.jpg" alt="office">
+      <div class="homepage-slider">
+        <div class="content slides">
+          <div class="slide">
+            <h1 class="slide-heading">Testimonial</h1>
+            <p class="slide-content">
+              Lorem Ipsum is simply dummy text
+              of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make
+              a type specimen book.
+            </p>
+            <span class="autor">Johny Vino</span>
+          </div>
+        </div>
+
+        <div id="dots" class="nav-dots">
+          <span class="nav-dot"></span>
+          <span class="nav-dot"></span>
+          <span class="nav-dot nav-dot_active"></span>
+          <span class="nav-dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-wrapper container">
+      <h1 class="blog-name">Our recent blogs</h1>
+      <div class="blog-panel">
+        <div class="blog">
+          <img src="assets/photo-content/repair.jpg">
+          <h2 class="caption">Lorem Ipsum is simply dummy text of the printing and
+            typesetting.</h2>
+          <p class="description blog-info">
+            Lore Issue is simply dummy text
+            of the printing and typesetting industry.
+            Lore Issue has...
+          </p>
+        </div>
+
+        <div class="blog">
+          <img src="assets/photo-content/torso.jpg" alt="plumber-torso-blog">
+          <h2 class="caption">Lorem Ipsum is simply dummy text of the printing and
+            typesetting.</h2>
+          <p class="description">
+            Lore Issue is simply dummy text
+            of the printing and typesetting industry.
+            Lore Issue has...
+          </p>
+        </div>
+
+        <div class="blog">
+          <img src="assets/photo-content/plumberman.png" alt="plumbeman-blog">
+          <h2 class="caption">Lorem Ipsum is simply dummy text of the printing and
+            typesetting.</h2>
+          <p class="description">
+            Lore Issue is simply dummy text
+            of the printing and typesetting industry.
+            Lore Issue has...
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="footer-news container">
+        <div class="social-info">
+          <img class="dark-logo" src="assets/icons/plumb-dark.svg" alt="footer-logo">
+          <span class="footer-content-wrapper">
+            Lore Issue is simply dummy text of
+            the printing and typesetting industry.
+            Lore Issue has been the industry's standard dummy
+            text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to make a type
+            specimen book.
+          </span>
+          <div class="social">
+            <img class="social-link" src="assets/icons/facebook-icon.svg" alt="facebook-icon">
+            <img class="social-link" src="assets/icons/google-icon.svg" alt="google-icon">
+            <img class="social-link" src="assets/icons/twitter-icon.svg" alt="twitter-icon">
+          </div>
+        </div>
+
+        <div class="links-container">
+          <ul class="links-footer">
+            <li class="service-link-header">Our Services</li>
+            <li class="service-item">Plumber service</li>
+            <li class="service-item">Bathroom Plumbing Service</li>
+            <li class="service-item">Kitchen Plumbing Service</li>
+            <li class="service-item">Roof Plumbing Service</li>
+            <li class="service-item">Bathroom Plumbing Service</li>
+            <li class="service-item">Kitchen Plumbing Service</li>
+          </ul>
+
+          <ul class="contacts-footer">
+            <li class="service-link-header">Contact</li>
+            <li class="contact-wrapper"></li>
+            <div class="adress">
+              <li class="uppercase-info">
+                1800-9938-2839
+              </li>
+
+              <li>
+                support@plumberpoint.com
+              </li>
+            </div>
+
+            <div class="adress">
+              <li class="uppercase-info">
+                A-507 Mandoli
+              </li>
+
+              <li>
+                New Delhi, India
+              </li>
+            </div>
+
+            <div class="adress">
+              <li class="uppercase-info">
+                Mon-Sat 9.00-15:00
+              </li>
+
+              <li>
+                Sunday CLOSED
+              </li>
+            </div>
+          </ul>
+
+          <div class="repair-footer">
+            <li class="service-link-header">
+              Resent posts
+            </li>
+
+
+            <div class="repair-wrapper">
+              <div class="photo-blog">
+                <img class="recent-blogs_img" src="assets/photo-content/repair-post.jpg" alt="pipe-repair">
+              </div>
+
+              <div class=recent-news>
+                <li class="uppercase-repair">
+                  Sewer Line Repair
+                </li>
+
+                <li class="repair-text">
+                  Lore Issue . Simply dummy text.
+                  The printing and typesetting industry.
+                  Lore Issue has been the industry'.
+                </li>
+              </div>
+            </div>
+
+            <div class="repair-wrapper">
+              <div class="photo-blog">
+                <img class="recent-blogs_img" src="assets/photo-content/repair-post.jpg" alt="pipe-repair">
+              </div>
+
+              <div class=recent-news>
+                <li class="uppercase-repair">
+                  Sewer Line Repair
+                </li>
+
+                <li class="repair-text">
+                  Lore Issue . Simply dummy text.
+                  The printing and typesetting industry.
+                  Lore Issue has been the industry'.
+                </li>
+              </div>
+            </div>
+
+            <div class="repair-wrapper">
+              <div class="photo-blog">
+                <img class="recent-blogs_img" src="assets/photo-content/repair-post.jpg" alt="pipe-repair">
+              </div>
+
+              <div class=recent-news>
+                <li class="uppercase-repair">
+                  Sewer Line Repair
+                </li>
+
+                <li class="repair-text">
+                  Lore Issue . Simply dummy text.
+                  The printing and typesetting industry.
+                  Lore Issue has been the industry'.
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-bottom">
+      <div class="copyright container">
+        <span>©Copyright 2020 Techwero Systems.</span>
+        <div class="menu-folder">
+          <span class="terms">Term of Services</a></span>
+          <span class="privacy">Privacy & policy</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
