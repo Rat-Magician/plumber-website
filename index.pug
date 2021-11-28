@@ -141,24 +141,7 @@ main
         | took a galley of type and scrambled it to make a type
         | specimen book.
     .staff-container
-      .staff-wrapper
-        img.staff-photo(src='assets/photo-content/worker-1.png' alt='Kumar-plumber')
-        .staff-briefing
-          span.staff-name Vinay Kumar
-          span.job-position Plumber
-      .staff
-        .staff-wrapper
-          img.staff-photo(src='assets/photo-content/worker-1.png' alt='Kumar-plumber')
-          .staff-briefing
-            span.staff-name Vinay Kumar
-            span.job-position Plumber
-      .staff
-        .staff-wrapper
-          img.staff-photo(src='assets/photo-content/worker-1.png' alt='Kumar-plumber')
-          .staff-briefing
-            span.staff-name Vinay Kumar
-            span.job-position Plumber
-      .staff
+      for __, i in Array(4)
         .staff-wrapper
           img.staff-photo(src='assets/photo-content/worker-1.png' alt='Kumar-plumber')
           .staff-briefing
