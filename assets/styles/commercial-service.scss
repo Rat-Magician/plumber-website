@@ -51,4 +51,16 @@
   line-height: 17px;
 }
 
+.advantages-ellipse-item {
+  width: 8px;
+  height: 8px;
+  border: 3px solid #DD3142;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+}
 
+.list-item {
+  padding-top: 29px;
+  display: flex;
+}
