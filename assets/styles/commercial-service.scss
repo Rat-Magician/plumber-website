@@ -105,3 +105,32 @@
 .elipse-item-wrapper {
   display: flex;
 }
+
+.about-us-img_wrapper {
+  background: url('../photo-content/about-us.jpg');
+  max-width: 1440px;
+  max-height: 304px;
+}
+
+.about_headline {
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.about_description {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--white);
+}
+
+.description_wrapper {
+  max-width: 432px;
+  padding-top: 111px;
+  padding-left: 135px;
+  padding-bottom: 37px;
+}
