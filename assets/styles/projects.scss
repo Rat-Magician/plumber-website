@@ -1,0 +1,46 @@
+@import "variables.scss";
+
+.projects-info_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project_header {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+.projects_text {
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--gray);
+}
+
+.projects_grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 1170px;
+}
+
+.project-grid_wrapper {
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.project_name {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--red);
+}
+
+.project-info {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gray-2);
+}
