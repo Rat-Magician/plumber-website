@@ -1,9 +1,13 @@
 @import "variables.scss";
+body {
+  display: flex;
+  justify-content: center;
+  zoom: 0;
+}
 
 .commercial-service-wrapper {
   display: flex;
   margin: 80px 20px;
-
 }
 
 .commercial-service-block {
@@ -70,7 +74,6 @@
   margin-left: 26px;
 }
 
-
 .list-item {
   padding-top: 50px;
   display: flex;
@@ -81,6 +84,7 @@
   font-size: 30px;
   line-height: 36px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .about-us_content {
@@ -94,7 +98,7 @@
   justify-content: space-between;
 }
 
-.learn-about-us {
+.container {
   max-width: 1170px;
 }
 
@@ -107,9 +111,9 @@
 }
 
 .about-us-img_wrapper {
-  background: url('../photo-content/about-us.jpg');
-  max-width: 1440px;
+  background: url('../photo-content/about-us.jpg') no-repeat;
   max-height: 304px;
+  background-size: cover;
 }
 
 .about_headline {
@@ -122,15 +126,30 @@
 }
 
 .about_description {
+  max-width: 432px;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: var(--white);
 }
 
+.learn-about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.about-us_section {
+  width: 100%;
+}
+
+.about-us-services-wrapper {
+  width: 100%;
+}
+
 .description_wrapper {
-  max-width: 432px;
   padding-top: 111px;
-  padding-left: 135px;
   padding-bottom: 37px;
+  margin: 0 auto;
 }
