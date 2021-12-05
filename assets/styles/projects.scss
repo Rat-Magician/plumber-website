@@ -1,15 +1,94 @@
 @import "variables.scss";
 
+.menu {
+  list-style: none;
+  color: var(--black);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.menu-wrapper {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+}
+
+.menu-item {
+  padding-left: 37px;
+}
+
+.call-button {
+  font-family: "Roboto", sans-serif;
+  height: 36px;
+  background-color: var(--red);
+  border-radius: 5px;
+  color: var(--white);
+  text-transform: uppercase;
+  outline: none;
+  border: 0 none;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin-left: 40px;
+  cursor: pointer;
+  padding: 0 18px;
+}
+
+.menu-link {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-link:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--red);
+  content: "";
+  transition: width 0.3s ease-out;
+}
+
+.menu-link:hover:after,
+.menu-link:focus:after {
+  width: 100%;
+}
+
+.about-us-img_wrapper {
+  background: url('../photo-content/bottoms-up.png') no-repeat;
+  background-size: cover;
+  height: 255px;
+}
+
+.projects_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 .projects-info_wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  max-width: 728px;
+  text-align: center;
+  padding-bottom: 48px;
+  padding-top: 56px;
 }
 
 .project_header {
   font-size: 30px;
   line-height: 35px;
-  font-weight: 500;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
 }
 
 .projects_text {
@@ -20,27 +99,35 @@
 
 .projects_grid {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  max-width: 1170px;
+  flex-wrap: wrap;
 }
 
 .project-grid_wrapper {
   max-width: 350px;
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  
+  padding-right: 40px;
+}
+
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .project_name {
   font-size: 16px;
   line-height: 19px;
   color: var(--red);
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 10px;
 }
 
-.project-info {
+.project_info {
   font-size: 14px;
   line-height: 17px;
   color: var(--gray-2);
+  padding-bottom: 45px;
 }
