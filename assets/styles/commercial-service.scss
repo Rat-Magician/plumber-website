@@ -1,0 +1,136 @@
+@import "variables.scss";
+
+.commercial-service-wrapper {
+  display: flex;
+  margin: 80px 20px;
+
+}
+
+.commercial-service-block {
+  background: var(--red);
+  color: var(--white);
+  display: flex;
+  position: relative;
+  padding: 127px 80px 125px 317px;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 880px;
+  box-sizing: border-box;
+}
+
+.commercial-service-text_wrapper {
+  text-align: left;
+  max-width: 432px;
+  position: absolute;  
+  right: 0;
+  flex-direction: column;
+  padding-right: 46px;
+}
+
+.commercial-service-img-item {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin-right: -250px;
+}
+
+.commercial-section-header {
+  font-size: 44px;
+  line-height: 52px;
+  margin: 0;
+  font-weight: 700;
+  padding-bottom: 18px;
+}
+
+.commercial-service-text {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.advantages-ellipse-item {
+  width: 8px;
+  height: 8px;
+  border: 3px solid #DD3142;
+  background: var(--white);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.column-advantages {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.services-info {
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--gray);
+  margin-left: 26px;
+}
+
+
+.list-item {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us_header {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.about-us_content {
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--gray);
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.learn-about-us {
+  max-width: 1170px;
+}
+
+.list-item, .advantages-list-column {
+  max-width: 450px;
+}
+
+.elipse-item-wrapper {
+  display: flex;
+}
+
+.about-us-img_wrapper {
+  background: url('../photo-content/about-us.jpg');
+  max-width: 1440px;
+  max-height: 304px;
+}
+
+.about_headline {
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.about_description {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--white);
+}
+
+.description_wrapper {
+  max-width: 432px;
+  padding-top: 111px;
+  padding-left: 135px;
+  padding-bottom: 37px;
+}

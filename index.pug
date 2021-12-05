@@ -8,23 +8,7 @@ head
   link(rel='stylesheet' href='./assets/fonts/Roboto-Regular.woff')
   title Plumber Point
 header
-  .menu
-    .header-logo
-      img(src='/assets/icons/plumbcomp-img.svg' alt='company-logo_header')
-    ul.menu-wrapper
-      li.menu-item
-        a Home
-      li.menu-item
-        a About us
-      li.menu-item
-        a Services
-      li.menu-item
-        a Project
-      li.menu-item
-        a Blogs
-      li.menu-item
-        a Contact
-      button.call-button Request A Call Back
+  include components/menu
 main
   section.receive-help-wrapper.container
     .contact-info
@@ -157,24 +141,7 @@ main
         | took a galley of type and scrambled it to make a type
         | specimen book.
     .staff-container
-      .staff-wrapper
-        img.staff-photo(src='assets/photo-content/worker-1.png' alt='Kumar-plumber')
-        .staff-briefing
-          span.staff-name Vinay Kumar
-          span.job-position Plumber
-      .staff
-        .staff-wrapper
-          img.staff-photo(src='assets/photo-content/worker-1.png' alt='Kumar-plumber')
-          .staff-briefing
-            span.staff-name Vinay Kumar
-            span.job-position Plumber
-      .staff
-        .staff-wrapper
-          img.staff-photo(src='assets/photo-content/worker-1.png' alt='Kumar-plumber')
-          .staff-briefing
-            span.staff-name Vinay Kumar
-            span.job-position Plumber
-      .staff
+      for __, i in Array(4)
         .staff-wrapper
           img.staff-photo(src='assets/photo-content/worker-1.png' alt='Kumar-plumber')
           .staff-briefing
