@@ -1,89 +1,68 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel='stylesheet' href='../assets/styles/projects.scss')
-        link(rel='stylesheet' href='../assets/fonts/Roboto-Regular.woff')
-        title Our Projects
-    body 
-      .menu
-        .header-logo
-          img(src='/assets/icons/plumbcomp-img.svg' alt='logo')
-        ul.menu-wrapper
-          li.menu-item
-            a.menu-link Home
-          li.menu-item
-            a.menu-link(href="/pages/commercial-service.pug") About us
-          li.menu-item
-            a.menu-link Services
-          li.menu-item
-            a.menu-link Project
-          li.menu-item
-            a.menu-link Blogs
-          li.menu-item
-            a.menu-link Contact
-          button.call-button Request A Call Back
+extends ../layouts/layout
 
+block head
+  title Our Projects
+  link(rel='stylesheet' href='../assets/styles/projects.scss')
 
+block body
+  section.learn-about-us 
+    .about-us-img_wrapper
 
-      section.learn-about-us 
-        .about-us-img_wrapper
+  section.projects_section
+    .projects-info_wrapper 
+      h2.project_header Our Projects 
+      p.projects_text.
+        Lorem Ipsum is simply dummy text
+        of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown
+        printer took a galley of type and scrambled it
+              to make a type specimen book.
 
-      section.projects_section
-        .projects-info_wrapper 
-          h2.project_header Our Projects 
-          p.projects_text.
-            Lorem Ipsum is simply dummy text
-            of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it
-                  to make a type specimen book.
+    section.projects_grid 
+        .project-grid_wrapper
+          img.project_image(src='../assets/photo-content/pointing.jpg')
+          h2.project_name Residential
+          p.project_info Kitchen Plumbing Project
 
-        section.projects_grid 
-            .project-grid_wrapper
-              img.project_image(src='../assets/photo-content/pointing.jpg')
-              h2.project_name Residential
-              p.project_info Kitchen Plumbing Project
+        .project-grid_wrapper
+          img(src='../assets/photo-content/fix.jpg')
+          h2.project_name Residential
+          p.project_info Bathroom Plumbing Project
 
-            .project-grid_wrapper
-              img(src='../assets/photo-content/fix.jpg')
-              h2.project_name Residential
-              p.project_info Bathroom Plumbing Project
+        .project-grid_wrapper
+          img(src='../assets/photo-content/quickfix.jpg')
+          h2.project_name Residential
+          p.project_info Bathroom Plumbing Project
 
-            .project-grid_wrapper
-              img(src='../assets/photo-content/quickfix.jpg')
-              h2.project_name Residential
-              p.project_info Bathroom Plumbing Project
+        .project-grid_wrapper
+          img(src='../assets/photo-content/fix.jpg')
+          h2.project_name Residential
+          p.project_info Bathroom Plumbing Project
 
-            .project-grid_wrapper
-              img(src='../assets/photo-content/fix.jpg')
-              h2.project_name Residential
-              p.project_info Bathroom Plumbing Project
+        .project-grid_wrapper 
+          img(src='../assets/photo-content/quickfix.jpg')
+          h2.project_name Residential
+          p.project_info Bathroom Plumbing Project 
 
-            .project-grid_wrapper 
-              img(src='../assets/photo-content/quickfix.jpg')
-              h2.project_name Residential
-              p.project_info Bathroom Plumbing Project 
+        .project-grid_wrapper 
+          img(src='../assets/photo-content/pointing.jpg')
+          h2.project_name Residential
+          p.project_info Kitchen Plumbing Project
 
-            .project-grid_wrapper 
-              img(src='../assets/photo-content/pointing.jpg')
-              h2.project_name Residential
-              p.project_info Kitchen Plumbing Project
+        .project-grid_wrapper 
+          img(src='../assets/photo-content/quickfix.jpg')
+          h2.project_name Residential
+          p.project_info Bathroom Plumbing Project
 
-            .project-grid_wrapper 
-              img(src='../assets/photo-content/quickfix.jpg')
-              h2.project_name Residential
-              p.project_info Bathroom Plumbing Project
+        .project-grid_wrapper 
+          img(src='../assets/photo-content/pointing.jpg')
+          h2.project_name Residential
+          p.project_info Kitchen Plumbing Project  
+        
+        .project-grid_wrapper 
+          img(src='../assets/photo-content/fix.jpg')
+          h2.project_name Residential
+          p.project_info Bathroom Plumbing Project
 
-            .project-grid_wrapper 
-              img(src='../assets/photo-content/pointing.jpg')
-              h2.project_name Residential
-              p.project_info Kitchen Plumbing Project  
-            
-            .project-grid_wrapper 
-              img(src='../assets/photo-content/fix.jpg')
-              h2.project_name Residential
-              p.project_info Bathroom Plumbing Project
+        include ../components/service_red_block
