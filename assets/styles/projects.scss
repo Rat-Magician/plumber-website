@@ -1,0 +1,78 @@
+@import "variables.scss";
+
+.learn-about-us {
+  width: 100%;
+}
+
+.about-us-img_wrapper {
+  background: url('../photo-content/bottoms-up.png') no-repeat;
+  background-size: cover;
+  height: 255px;
+}
+
+.projects_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.projects-info_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 728px;
+  text-align: center;
+  padding-bottom: 48px;
+  padding-top: 56px;
+}
+
+.project_header {
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+}
+
+.projects_text {
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--gray);
+}
+
+.projects_grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-grid_wrapper {
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 40px;
+}
+
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.project_name {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--red);
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.project_info {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gray-2);
+  padding-bottom: 45px;
+}
