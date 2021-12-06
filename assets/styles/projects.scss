@@ -1,61 +1,6 @@
 @import "variables.scss";
 
-.menu {
-  list-style: none;
-  color: var(--black);
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
-.menu-wrapper {
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  align-items: baseline;
-}
-
-.menu-item {
-  padding-left: 37px;
-}
-
-.call-button {
-  font-family: "Roboto", sans-serif;
-  height: 36px;
-  background-color: var(--red);
-  border-radius: 5px;
-  color: var(--white);
-  text-transform: uppercase;
-  outline: none;
-  border: 0 none;
-  font-size: 11px;
-  font-weight: 700;
-  white-space: nowrap;
-  margin-left: 40px;
-  cursor: pointer;
-  padding: 0 18px;
-}
-
-.menu-link {
-  position: relative;
-  cursor: pointer;
-}
-
-.menu-link:after {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--red);
-  content: "";
-  transition: width 0.3s ease-out;
-}
-
-.menu-link:hover:after,
-.menu-link:focus:after {
+.learn-about-us {
   width: 100%;
 }
 
