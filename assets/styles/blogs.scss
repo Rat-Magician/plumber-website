@@ -1,0 +1,24 @@
+@import "variables.scss";
+
+.blogs-wrapper {
+  display: flex;
+  padding-top: 19px;
+}
+
+.blog-content-wrapper {
+  max-width: 432px;
+  padding-right: 74px;
+}
+
+.blog-title {
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 700;
+  padding-bottom: 13px;
+  margin-bottom: 0;
+}
+
+.blog-details {
+  font-size: 14px;
+  line-height: 17px;
+}
