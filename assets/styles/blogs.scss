@@ -50,5 +50,33 @@
   color: var(--red);
   cursor: pointer;
   text-decoration: underline;
-
 }
+
+.benefits-grid-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.benefits-grid-item {
+  padding-right: 58px;
+  padding-top: 60px;
+}
+
+.benefits-grid-text-wrapper {
+  max-width: 329px;
+}
+
+.benefits-grid-header {
+  font-size: 20px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.benefts-grid-text {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
