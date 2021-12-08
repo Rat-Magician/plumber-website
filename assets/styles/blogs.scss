@@ -1,0 +1,82 @@
+@import "variables.scss";
+
+.blogs-wrapper {
+  display: flex;
+  padding-top: 19px;
+}
+
+.blog-content-wrapper {
+  max-width: 432px;
+  padding-right: 74px;
+}
+
+.blog-title {
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 700;
+  padding-bottom: 13px;
+  margin-bottom: 0;
+}
+
+.blog-details {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.benefits-wrapper {
+  display: flex;
+  padding-top: 118px;
+}
+
+.benefits-text-wrapper {
+  max-width: 531px;
+  margin-left: 71px;
+}
+
+.benefits-title {
+  font-size: 38px;
+  line-height: 45px;
+  font-weight: 400;
+}
+
+.benefits-details {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.learn-more-link {
+  font-size: 16px;
+  line-height: 41px;
+  color: var(--red);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.benefits-grid-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.benefits-grid-item {
+  padding-right: 58px;
+  padding-top: 60px;
+}
+
+.benefits-grid-text-wrapper {
+  max-width: 329px;
+}
+
+.benefits-grid-header {
+  font-size: 20px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.benefts-grid-text {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
