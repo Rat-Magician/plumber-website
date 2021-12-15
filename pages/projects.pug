@@ -4,6 +4,10 @@ block head
   title Our Projects
   link(rel='stylesheet' href='../assets/styles/projects.scss')
 
+block footer
+  - var hideSliderHover = true
+  include ../components/footer
+
 block body
   section.learn-about-us 
     .about-us-img_wrapper
@@ -65,4 +69,4 @@ block body
           h2.project_name Residential
           p.project_info Bathroom Plumbing Project
 
-        include ../components/service_red_block
+        //include ../components/service_red_block
