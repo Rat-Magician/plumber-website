@@ -1,0 +1,31 @@
+block head
+  title Contact Us
+  link(rel='stylesheet' href='../assets/styles/contact-us.scss')
+  link(rel='stylesheet' href='../assets/fonts/Rubik-Regular.woff2')
+
+
+  form.container(action='/company-form-page' method='post')
+    h2.form-title Get in touch
+    ul.data-wrapper
+      li.form-item
+        label(for='name')
+        input#name(type='text' name='user_name' placeholder='Your name')
+
+      li.form-item
+        label(for='mail') 
+        input#mail(type='email' name='user_mail' placeholder='E-mail adress')
+
+
+      li.form-item 
+        label(for='tel')
+        input#tel(type='tel' name='user_number' placeholder='Contact number' maxlength='12')
+
+      li.form-item  
+        label(for='subject')
+        input#subject(type='subject' name='subject' placeholder='Subject') 
+        
+      li.form-item 
+        label(for='description')
+        textarea#description(type='description' name='description' placeholder='Description')
+
+      button.form-btn(type='submit' maxlength="100") Send a message
