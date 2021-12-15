@@ -1,0 +1,40 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.data-wrapper {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form {
+  border: 0;
+}
+
+input,
+textarea {
+  border-bottom: 1px solid #6d6d6d;
+  padding: 10px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
+  width: 513px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+li:last-child {
+  width: 1069px;
+}
+
+.form-btn {
+  max-width: 214px;
+  max-height: 52px;
+  background: var(--red);
+  color: var(--white);
+  text-transform: uppercase;
+}
+
