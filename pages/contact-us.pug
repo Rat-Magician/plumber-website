@@ -1,31 +1,37 @@
+extends ../layouts/layout
+
 block head
   title Contact Us
   link(rel='stylesheet' href='../assets/styles/contact-us.scss')
   link(rel='stylesheet' href='../assets/fonts/Rubik-Regular.woff2')
 
+block footer
+  - var hideSliderHover = true
+  include ../components/footer
 
+block body
   form.container(action='/company-form-page' method='post')
     h2.form-title Get in touch
-    ul.data-wrapper
-      li.form-item
+    div.data-wrapper
+      div.form-item
         label(for='name')
-        input#name(type='text' name='user_name' placeholder='Your name')
+        input#name(type='text' name='user_name' placeholder='Your name' maxlength="50")
 
-      li.form-item
+      div.form-item.form-dent
         label(for='mail') 
         input#mail(type='email' name='user_mail' placeholder='E-mail adress')
 
-
-      li.form-item 
+      div.form-item
         label(for='tel')
         input#tel(type='tel' name='user_number' placeholder='Contact number' maxlength='12')
 
-      li.form-item  
+      div.form-item.form-dent
         label(for='subject')
         input#subject(type='subject' name='subject' placeholder='Subject') 
         
-      li.form-item 
+      div.form-item.container
         label(for='description')
         textarea#description(type='description' name='description' placeholder='Description')
 
+    div.form-btn-wrapper.container
       button.form-btn(type='submit' maxlength="100") Send a message
