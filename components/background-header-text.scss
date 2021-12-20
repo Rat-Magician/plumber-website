@@ -1,0 +1,31 @@
+@import "../assets/styles/variables.scss";
+
+.background-header-text {
+  background: url('../assets/photo-content/about-us.jpg') no-repeat;
+  height: 304px;
+  background-size: cover;
+  width: 100%;
+}
+
+.background-header-text__body {
+  padding-top: 111px;
+  padding-bottom: 37px;
+  margin: 0 auto;
+}
+
+.background-header-text__title {
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+}
+
+.background-header-text__description {
+  max-width: 432px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--white);
+}
+

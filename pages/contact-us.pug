@@ -5,11 +5,11 @@ block head
   link(rel='stylesheet' href='../assets/styles/contact-us.scss')
   link(rel='stylesheet' href='../assets/fonts/Rubik-Regular.woff2')
 
-block footer
-  - var hideSliderHover = true
-  include ../components/footer
-
 block body
+  -var backgroundHeaderTextTitle = 'Contact us'
+  -var backgroundHeaderTextDescription = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book'
+  include ../components/background-header-text
+
   form.container(action='/company-form-page' method='post')
     h2.form-title Get in touch
     div.data-wrapper
@@ -35,3 +35,8 @@ block body
 
     div.form-btn-wrapper.container
       button.form-btn(type='submit' maxlength="100") Send a message
+
+block footer
+  - var hideSliderHover = true
+  include ../components/footer
+
