@@ -42,6 +42,7 @@ textarea {
 
 .form-dent {
   padding-left: 24px;
+  padding-bottom: 51px;
 }
 
 .form-descr {
@@ -50,4 +51,66 @@ textarea {
 
 .form-btn-wrapper {
   text-align: right;
+  padding-right: 98px;
+  padding-top: 22px;
 }
+
+ #description {
+  width: 1061px;
+  padding-bottom: 0;
+}
+
+.contacts-block {
+  background: var(--gray-3);
+  width: 100%;
+  display: flex;
+  margin-top: 53px;
+}
+
+.contact-page-block  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.content-dent {
+  padding-bottom: 25px;
+}
+
+.contact-block-wrapper:first-child p {
+  max-width: 377px;
+}
+
+.contacts-page-wrapper {
+  width: 84%;
+}
+
+.contacts-page-wrapper, .map-canvas {
+  margin: auto;
+}
+
+.contact-page-content,.business-header {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.contact-header {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--red);
+  font-weight: 800;
+}
+
+.business-header {
+  font-weight: 600;
+  color: var(--red);
+}
+
+.map-canvas {
+  background: url('../photo-content/map.jpg') no-repeat;
+  width: 954px;
+  height: 430px;
+  background-position-y: center;
+}
+

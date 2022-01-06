@@ -12,26 +12,57 @@ block footer
 block body
   form.container(action='/company-form-page' method='post')
     h2.form-title Get in touch
-    div.data-wrapper
+    .data-wrapper
       div.form-item
         label(for='name')
-        input#name(type='text' name='user_name' placeholder='Your name' maxlength="50")
+        input#name(type='text' name='user_name' placeholder='Full name' maxlength="50" required)
 
-      div.form-item.form-dent
+      .form-item.form-dent
         label(for='mail') 
-        input#mail(type='email' name='user_mail' placeholder='E-mail adress')
+        input#mail(type='email' name='user_mail' placeholder='E-mail adress' required)
 
-      div.form-item
+      .form-item
         label(for='tel')
-        input#tel(type='tel' name='user_number' placeholder='Contact number' maxlength='12')
+        input#tel(type='number' name='user_number' placeholder='Contact number' pattern="[+]{1}[0-9]{11,14}" required)
 
-      div.form-item.form-dent
+      .form-item.form-dent
         label(for='subject')
-        input#subject(type='subject' name='subject' placeholder='Subject') 
+        input#subject(type='subject' name='subject' placeholder='Subject' required) 
         
-      div.form-item.container
+      .form-item
         label(for='description')
-        textarea#description(type='description' name='description' placeholder='Description')
+        textarea#description(type='description' name='description' placeholder='Description' required)
 
-    div.form-btn-wrapper.container
+    .form-btn-wrapper
       button.form-btn(type='submit' maxlength="100") Send a message
+
+  section.contacts-block
+    .contact-page-block.container
+      .contacts-page-wrapper
+        .contact-block-wrapper
+          h2.contact-header.contact-page-content Contact Us 
+          p.contact-page-content.content-dent.
+            It is a long established fact that a reader will be distracted
+            by the readable content of a page when looking at its layout. 
+
+        .contact-block-wrapper
+          h2.business-header Business hours: 
+          p.contact-page-content.
+            Monday to Saturday 9:30 am - 4:30 pm
+
+        .contact-block-wrapper
+          h2.business-header Adress:
+          p.contact-page-content.
+            A-67 south Ex Delhi-11002
+
+        .contact-block-wrapper    
+          h2.business-header E-mail
+          p.contact-page-content.
+            abc@abc.com
+
+        .contact-block-wrapper
+          h2.business-header Phone:
+          p.contact-page-content.
+            1800 - 458495-4455
+  
+      .map-canvas
