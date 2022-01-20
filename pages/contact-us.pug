@@ -14,7 +14,6 @@ block body
     h2.form-title Get in touch
     .data-wrapper
       div.form-item
-        label(for='name')
         input#name(type='text' name='user_name' placeholder='Full name' maxlength="50" required)
 
       .form-item.form-dent
@@ -34,35 +33,35 @@ block body
         textarea#description(type='description' name='description' placeholder='Description' required)
 
     .form-btn-wrapper
-      button.form-btn(type='submit' maxlength="100") Send a message
+      button.form-btn( maxlength="100") Send a message
 
   section.contacts-block
     .contact-page-block.container
       .contacts-page-wrapper
-        .contact-block-wrapper
-          h2.contact-header.contact-page-content Contact Us 
+        .contact-block
+          h2.contact-block_header.contact-page-content Contact Us 
           p.contact-page-content.content-dent.
             It is a long established fact that a reader will be distracted
             by the readable content of a page when looking at its layout. 
 
-        .contact-block-wrapper
+        .contact-block
           h2.business-header Business hours: 
           p.contact-page-content.
             Monday to Saturday 9:30 am - 4:30 pm
 
-        .contact-block-wrapper
+        .contact-block
           h2.business-header Adress:
           p.contact-page-content.
             A-67 south Ex Delhi-11002
 
-        .contact-block-wrapper    
+        .contact-block    
           h2.business-header E-mail
           p.contact-page-content.
             abc@abc.com
 
-        .contact-block-wrapper
+        .contact-block
           h2.business-header Phone:
           p.contact-page-content.
             1800 - 458495-4455
-  
-      .map-canvas
+      
+      img.map-canvas(src='../assets/photo-content/map.jpg')
