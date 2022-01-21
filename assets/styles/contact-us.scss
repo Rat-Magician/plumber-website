@@ -73,7 +73,6 @@ textarea {
 
 .contact-page-block  {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin: auto;
 }
@@ -87,11 +86,7 @@ textarea {
 }
 
 .contacts-page-wrapper {
-  width: 84%;
-}
-
-.contacts-page-wrapper, .map-canvas {
-  margin: auto;
+  width: 45%;
 }
 
 .contact-page-content,.business-header {
@@ -112,6 +107,6 @@ textarea {
 }
 
 .map-canvas {
-  width: 51%;
+  width: 54%;
 }
 

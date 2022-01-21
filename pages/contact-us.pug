@@ -10,6 +10,10 @@ block footer
   include ../components/footer
 
 block body
+  -var backgroundHeaderTextTitle = 'Contact Us'
+  -var backgroundHeaderTextDescription = 'Lorem Ipsum is simply dummy text of '
+  include ../components/background-header-text
+
   form.container(action='/company-form-page' method='post')
     h2.form-title Get in touch
     .data-wrapper
@@ -62,6 +66,7 @@ block body
         .contact-block
           h2.business-header Phone:
           p.contact-page-content.
-            1800 - 458495-4455
-      
-      img.map-canvas(src='../assets/photo-content/map.jpg')
+            1800 - 458495-4455\
+
+      .map-canvas
+        img(src='../assets/photo-content/map.jpg')

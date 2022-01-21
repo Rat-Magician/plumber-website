@@ -124,20 +124,5 @@ block body
             .advantages-ellipse-item
             .column-advantages Commercial Service
       img(src='assets/photo-content/bottoms-up.png' alt='like')
-  section.team-info-wrapper.container
-    .team-info
-      span.team-title.header Our Dedicated Team
-      span.team-description
-        | Lorem Ipsum is simply
-        | dummy text of the printing and typesetting industry.
-        | Lorem Ipsum has been the industry&apos;s standard dummy
-        | text ever since the 1500s, when an unknown printer
-        | took a galley of type and scrambled it to make a type
-        | specimen book.
-    .staff-container
-      for __, i in Array(4)
-        .staff-wrapper
-          img.staff-photo(src='assets/photo-content/worker-1.png' alt='Kumar-plumber')
-          .staff-briefing
-            span.staff-name Vinay Kumar
-            span.job-position Plumber
+  
+      include ./components/employees
