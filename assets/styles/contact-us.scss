@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   font-family: "Rubik", sans-serif;
+  justify-content: center;
 }
 
 form {
@@ -12,8 +13,12 @@ form {
 .form-title {
   font-size: 40px;
   line-height: 47px;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
+}
+
+.user-data {
+  padding: 40px 0 20px 0;
 }
 
 input,
@@ -55,7 +60,7 @@ textarea {
 
 .form-btn-wrapper {
   text-align: right;
-  padding-right: 98px;
+  padding-right: 52px;
   padding-top: 22px;
 }
 
@@ -69,6 +74,7 @@ textarea {
   width: 100%;
   display: flex;
   margin-top: 53px;
+  padding: 40px 0 40px 0;
 }
 
 .contact-page-block  {
@@ -78,7 +84,11 @@ textarea {
 }
 
 .content-dent {
-  padding-bottom: 25px;
+  padding-bottom: 15px;
+}
+
+.contact-block {
+  margin-bottom: 26px;
 }
 
 .contact-block:first-child p {

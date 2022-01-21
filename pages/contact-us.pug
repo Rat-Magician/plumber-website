@@ -14,7 +14,7 @@ block body
   -var backgroundHeaderTextDescription = 'Lorem Ipsum is simply dummy text of '
   include ../components/background-header-text
 
-  form.container(action='/company-form-page' method='post')
+  form.container.user-data(action='/company-form-page' method='post')
     h2.form-title Get in touch
     .data-wrapper
       div.form-item
@@ -66,7 +66,7 @@ block body
         .contact-block
           h2.business-header Phone:
           p.contact-page-content.
-            1800 - 458495-4455\
+            1800 - 458495-4455
 
       .map-canvas
         img(src='../assets/photo-content/map.jpg')
