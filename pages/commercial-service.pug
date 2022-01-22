@@ -6,17 +6,9 @@ block head
 
 block body
   section.learn-about-us
-    section.about-us_section
-      .about-us-img_wrapper
-        .description_wrapper.container
-          h2.about_headline About Us
-          p.about_description.
-            Lorem Ipsum is simply dummy text of the printing
-            and typesetting industry. Lorem Ipsum has been the
-            industry&apos;s standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book
-
+    -var backgroundHeaderTextTitle = 'About us 1'
+    -var backgroundHeaderTextDescription = 'Some description'
+    include ../components/background-header-text
 
     .about-us-wrapper.container
       h2.about-us_header Plumber Points Company
@@ -103,3 +95,5 @@ block body
                standard dummy text.
 
     include ../components/service_red_block
+
+    include ../components/employees
