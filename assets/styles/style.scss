@@ -1,10 +1,9 @@
 @import "variables.scss";
 
- header {
+header {
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
   font-weight: 700;
 }
-
 
 /* Call for plumbing needs block */
 
@@ -20,12 +19,18 @@ main {
   justify-content: center;
 }
 
+.align_left {
+  text-align: left;
+}
+
 .contact-info {
-  font-size: 44px;
   line-height: 52px;
   text-transform: uppercase;
-  text-align: left;
   align-self: center;
+}
+
+.font-size_common {
+  font-size: 44px;
 }
 
 .contact-us {
@@ -33,35 +38,15 @@ main {
   flex-direction: column;
 }
 
-.contact-header {
-  font-weight: 900;
-  font-size: 44px;
-}
-
 .needs-text {
   font-weight: 600;
 }
 
 .contact-number {
-font-size: 34px;
-line-height: 40px;
-font-weight: 900;
-padding-top: 17px;
-}
-
-.services-button {
-  width: 160px;
-  height: 44px;
-  border-radius: 35px;
-  background: var(--red);
-  border: 1px solid var(--red);
-}
-
-.service-button-text {
-  font-size: 15px;
-  color: var(--white);
-  line-height: 18px;
-  text-transform: uppercase;
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 900;
+  padding-top: 17px;
 }
 
 .plumber-image-item {
@@ -71,9 +56,12 @@ padding-top: 17px;
 
 /* Services block*/
 
+.background_red {
+  background: var(--red);
+}
+
 .maintenance-wrapper {
   width: 100%;
-  background: var(--red);
   display: flex;
   justify-content: center;
 }
@@ -102,7 +90,7 @@ padding-top: 17px;
   height: 32px;
   background: var(--white);
   border-radius: 5px;
-  border: var(--white) solid 1px;
+  border: 1px solid var(--white);
   margin-top: 8px;
 }
 
@@ -121,7 +109,6 @@ padding-top: 17px;
 
 .welcome-header {
   font-weight: 700;
-  font-size: 44px;
   line-height: 52px;
   max-width: 400px;
   margin: 0;
@@ -149,7 +136,6 @@ padding-top: 17px;
   background: rgba(255, 255, 255, 0.7);
   max-width: 542px;
   z-index: 10;
-  text-align: left;
   width: 50%;
   padding: 40px;
 }
@@ -157,9 +143,7 @@ padding-top: 17px;
 .learn-button {
   width: 136px;
   height: 43px;
-  background: var(--red);
   border-radius: 45px;
-  border: 1px solid var(--red);
   color: var(--white);
   font-size: 15px;
   line-height: 18px;
@@ -177,7 +161,6 @@ padding-top: 17px;
 /* Our Company history*/
 
 .our-company_block {
-  background: var(--red);
   width: 100%;
 }
 
@@ -193,7 +176,6 @@ padding-top: 17px;
 
 .text-block-experts {
   max-width: 432px;
-  text-align: left;
   padding: 50px 0 50px 0;
   margin-left: -98px;
 }
@@ -219,7 +201,7 @@ padding-top: 17px;
   padding-bottom: 35px;
 }
 
-.company-info-padding { 
+.company-info-padding {
   padding-bottom: 0;
 }
 
@@ -254,7 +236,7 @@ padding-top: 17px;
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding-bottom: 66px ;
+  padding-bottom: 66px;
 }
 
 .advantages-list {
@@ -265,7 +247,7 @@ padding-top: 17px;
 .advantages-ellipse-item {
   width: 8px;
   height: 8px;
-  border: 3px solid #DD3142;
+  border: 3px solid var(--red);
   background: var(--white);
   border-radius: 50%;
   display: flex;
@@ -381,7 +363,6 @@ footer {
 /* Our Recent Blogs block*/
 
 .blog-wrapper {
-  text-align: left;
   padding: 52px 0 52px 0;
 }
 
@@ -533,7 +514,7 @@ footer {
 /* Copyright block*/
 
 .navigation-bottom {
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid #ffffff;
   background: var(--black);
   display: flex;
   justify-content: center;
@@ -564,14 +545,6 @@ footer {
   justify-content: center;
 }
 
-.contact-info {
-  font-size: 44px;
-  line-height: 52px;
-  text-transform: uppercase;
-  text-align: left;
-  align-self: center;
-}
-
 .contact-us {
   display: flex;
   flex-direction: column;
@@ -579,32 +552,18 @@ footer {
 
 .contact-header {
   font-weight: 900;
-  font-size: 44px;
-}
-
-.contact-number {
-  font-size: 34px;
-  line-height: 40px;
-  font-weight: 900;
-  padding-top: 17px;
-}
-
-.needs-text {
-  font-weight: 600;
 }
 
 .services-button {
   width: 160px;
   height: 44px;
   border-radius: 35px;
-  background: var(--red);
-  border: 1px solid var(--red);
   font-size: 15px;
   color: var(--white);
   line-height: 18px;
   text-transform: uppercase;
 }
 
-.plumber-image-item {
-  padding-left: 64px;
+.border_red {
+  border: 1px solid var(--red);
 }
