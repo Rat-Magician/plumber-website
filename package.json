@@ -1,12 +1,12 @@
 {
   "name": "plumber-website",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/Rat-Magician/plumber-website.git",
   "author": "Rat-Magician <alexprototypemercer121@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.pug pages/*"
+    "dev": "parcel index.pug pages/*",
+    "build": "parcel build index.pug pages/*"
   },
   "dependencies": {
     "parcel": "^2.0.1"
