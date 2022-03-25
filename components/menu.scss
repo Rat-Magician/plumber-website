@@ -8,6 +8,10 @@
   padding: 0 20px;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 .menu-wrapper {
   cursor: pointer;
   list-style: none;
@@ -32,13 +36,11 @@
   font-weight: 700;
   white-space: nowrap;
   margin-left: 40px;
-  cursor: pointer;
   padding: 0 18px;
 }
 
 .menu-link {
   position: relative;
-  cursor: pointer;
 }
 
 .menu-link:after {
