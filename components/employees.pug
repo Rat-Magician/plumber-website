@@ -1,8 +1,8 @@
 style 
     include employees.scss
 
-section.team-info-wrapper.container
-    .team-info
+section.team-info-wrapper.container.content-flex.content-flex-align_center 
+    .team-info.content-flex
       span.team-title.header Our Dedicated Team
       span.team-description
         | Lorem Ipsum is simply
@@ -11,10 +11,10 @@ section.team-info-wrapper.container
         | text ever since the 1500s, when an unknown printer
         | took a galley of type and scrambled it to make a type
         | specimen book.
-    .staff-container
+    .staff-container.content-flex_justify.content-flex
       for __, i in Array(4)
-        .staff-wrapper
+        .staff-wrapper.content-flex_justify.content-flex
           img.staff-photo(src='/assets/photo-content/worker-1.png' alt='Kumar-plumber')
-          .staff-briefing
+          .staff-briefing.content-flex_justify.content-flex.content-flex-align_center 
             span.staff-name Vinay Kumar
             span.job-position Plumber

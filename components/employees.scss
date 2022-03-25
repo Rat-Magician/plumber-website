@@ -1,67 +1,65 @@
+.content-flex {
+  display: flex;
+}
+
+.content-flex_justify {
+  justify-content: center;
+}
+
+.content-flex-align_center {
+  align-items: center;
+}
+
 .team-info-wrapper {
-    padding: 63px 0 69px 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    margin: auto;
-  }
-  
-  .team-info {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 51px;
-  }
-  
-  .header {
-    padding-bottom: 8px;
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 35px;
-    font-weight: 600;
-  }
-  
-  .team-description {
-    font-size: 14px;
-    line-height: 19px;
-    color: var(--gray);
-  }
-  
-  .staff-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .staff-briefing {
-    width: 210px;
-    height: 78px;
-    background: var(--red);
-    border-radius: 5px;
-    color: var(--white);
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    position: absolute;
-    bottom: -39px;    
-    align-items: center;
-  }
-  
-  .staff-name {
-    font-size: 18px;
-    line-height: 21px;
-    padding-bottom: 13px;
-  }
-  
-  .job-position {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  
-  .staff-wrapper {
-    display: flex;
-    position: relative;
-    justify-content: center;
-  }
-  
+  padding: 63px 0 69px 0;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+
+.team-info {
+  width: 70%;
+  flex-direction: column;
+  padding-bottom: 51px;
+}
+
+.header {
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 600;
+}
+
+.team-description {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--gray);
+}
+
+.staff-briefing {
+  width: 210px;
+  height: 78px;
+  background: var(--red);
+  border-radius: 5px;
+  color: var(--white);
+  font-weight: 500;
+  flex-flow: column;
+  position: absolute;
+  bottom: -39px;
+}
+
+.staff-name {
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 13px;
+}
+
+.job-position {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.staff-wrapper {
+  position: relative;
+}
